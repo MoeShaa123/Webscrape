@@ -5,7 +5,7 @@ import pandas as pd
 
 
 
-page=urllib.request.Request('https://cod.tracker.gg/cold-war/leaderboards/stats/psn/Kills?page=1',headers={'User-Agent': 'Mozilla/5.0'})
+page=urllib.request.Request('https://cod.tracker.gg/vanguard/leaderboards/stats/psn/Kills?page=1',headers={'User-Agent': 'Mozilla/5.0'})
 infile=urllib.request.urlopen(page).read()
 data = infile.decode('ISO-8859-1')
 
@@ -27,7 +27,7 @@ filename = "kd.csv"
 x = {"username":[], "kills":[], "games":[]}
 
 for i in range(0,len(user)):
-    x['username'].append(user[i].text)
+    x['username'].append(user[i].text.strip())
 
 for i in range(0,(len(user))*2,2):
     x['kills'].append(kc[i].text.strip().replace(',', ''))

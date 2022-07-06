@@ -1,6 +1,5 @@
 import urllib.request
 from urllib.request import Request, urlopen
-import bs4
 from bs4 import BeautifulSoup as soup
 import pandas as pd
 

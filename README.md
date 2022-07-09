@@ -1,6 +1,6 @@
 # Webscrape
 
-Made a Python script which extracts information from a website using the module BeutifulSoup
+Made a Python script which extracts information from a website using the module BeautifulSoup
 
 The website I chose to data scrape from is leaderboard from one of the most popular games out there
 
